@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "ec4d6e09-8982-4eed-b68c-06cb25ac1dea",
+		"name": "extinct animal API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45944597",
+		"_collection_link": "https://jamelmurray.postman.co/workspace/jamel-murray's-Workspace~95e3f83d-3dd8-4df4-88cb-59a1d8fc91bb/collection/45944597-ec4d6e09-8982-4eed-b68c-06cb25ac1dea?action=share&source=collection_link&creator=45944597"
+	},
+	"item": [
+		{
+			"name": "extinct animal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/animal",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"animal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}",
+					"host": [
+						"{{BaseUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "https://extinct-api.herokuapp.com/api/v1",
+			"type": "string"
+		}
+	]
+}

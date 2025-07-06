@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "353249fa-d5b6-42b5-a66b-e6d8341ab851",
+		"name": "Pokémon API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45944597",
+		"_collection_link": "https://jamelmurray.postman.co/workspace/jamel-murray's-Workspace~95e3f83d-3dd8-4df4-88cb-59a1d8fc91bb/collection/45944597-353249fa-d5b6-42b5-a66b-e6d8341ab851?action=share&source=collection_link&creator=45944597"
+	},
+	"item": [
+		{
+			"name": "pokemon",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/pokemon",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "charizard",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/pokemon/charizard",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"pokemon",
+						"charizard"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "https://pokeapi.co/api/v2",
+			"type": "string"
+		},
+		{
+			"value": "",
+			"type": "string"
+		},
+		{
+			"value": "",
+			"type": "default"
+		},
+		{
+			"value": "",
+			"type": "string"
+		}
+	]
+}
